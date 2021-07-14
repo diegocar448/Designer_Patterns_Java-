@@ -46,5 +46,14 @@ SOLID, Criacional, Estrutural, Comportamental.
 * O Abstract Factory define uma interface para criar todos os produtos distintos, mas deixa a criação real do produto para classes fábrica concretas. Cada tipo de fábrica corresponde a uma determinada variedade de produtos.
 * O código cliente trabalha com fábricas e produtos somente através de suas interfaces abstratas. Ele permite que o mesmo código cliente funcione com produtos diferentes. Você apenas cria uma nova classe fábrica concreta e a passa para o código cliente
 
+### Builder
+
+* No padrão Builder iremos quebrar o processo de criação do objeto em etapas, e em vários métodos, como ferramentas e componentes, preciso de motor, ok a classe Motor estará disponível, preciso de uma caçamba que está a nossa disposição.
+* Esses componentes serão chamados de builders, que são os itens para construir o objeto complexo.
+*A sequência da construção, será guiada por um Diretor, que recebe quais os métodos ele precisa, e sempre que solicitado, dispara a sequencia para os builders, que irão construir o objeto.
+* Assim, temos uma biblioteca de componentes e ferramentas, que são acessadas pelo diretor quando provocado a construir algum modelo pré-estabelecido por meio de uma interface.
+* Sempre chamaremos os builder para resolver objeto complexos com muitos parâmetro.s
+
+
 
 
