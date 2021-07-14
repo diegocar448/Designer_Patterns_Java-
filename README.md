@@ -34,3 +34,11 @@ SOLID, Criacional, Estrutural, Comportamental.
 * Abstrações não devem depender de detalhes.
 
 
+## Design Patterns Criacional
+
+### Factory Method
+
+* No Factory Method nos delegamos a instancia de objetos para as subclasses, não é a classe principal que vai instanciar o objeto, sendo delegado para as subclasses.
+* Iremos programa dirigido a interfaces, de uma maneira que se precisar aumentar recursos para minha factory ele têm essa possibilidade de estender sem alterar o código .
+
+
