@@ -41,4 +41,10 @@ SOLID, Criacional, Estrutural, Comportamental.
 * No Factory Method nos delegamos a instancia de objetos para as subclasses, não é a classe principal que vai instanciar o objeto, sendo delegado para as subclasses.
 * Iremos programa dirigido a interfaces, de uma maneira que se precisar aumentar recursos para minha factory ele têm essa possibilidade de estender sem alterar o código .
 
+### Abstract Factory
+
+* O Abstract Factory define uma interface para criar todos os produtos distintos, mas deixa a criação real do produto para classes fábrica concretas. Cada tipo de fábrica corresponde a uma determinada variedade de produtos.
+* O código cliente trabalha com fábricas e produtos somente através de suas interfaces abstratas. Ele permite que o mesmo código cliente funcione com produtos diferentes. Você apenas cria uma nova classe fábrica concreta e a passa para o código cliente
+
+
 
