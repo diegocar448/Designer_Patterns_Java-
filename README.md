@@ -54,6 +54,13 @@ SOLID, Criacional, Estrutural, Comportamental.
 * Assim, temos uma biblioteca de componentes e ferramentas, que são acessadas pelo diretor quando provocado a construir algum modelo pré-estabelecido por meio de uma interface.
 * Sempre chamaremos os builder para resolver objeto complexos com muitos parâmetros.
 
+### Adapter
+
+* Podemos utilizar o padrão ADAPTER para **converter a interface de um objeto** de maneira que **outro objeto possa compreender as informações**.
+* Um adaptador encobre um dos objetos para esconder as regras de negócio e qualquer dificuldade de conversão, isso fica oculto. O objeto encoberto neste caso o PalPal new fica sabendo que existe um adapter, o adapter só consome a informação.
+* Adapter Convert a interface de uma classe para outro interface que o código cliente espera retornar. A entidade adaptadora permite que classes com interfaces incompativeis trabalhem juntas.
+* Vamos pensar nesse padrão de projeto como um Benjamin onde ele permite adaptador e fazer a comunicação, por exemplo um API pegar um padrão de comunicação pegando um XML e retornando um JSON.
+
 
 
 
