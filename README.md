@@ -52,7 +52,7 @@ SOLID, Criacional, Estrutural, Comportamental.
 * Esses componentes serão chamados de builders, que são os itens para construir o objeto complexo.
 *A sequência da construção, será guiada por um Diretor, que recebe quais os métodos ele precisa, e sempre que solicitado, dispara a sequencia para os builders, que irão construir o objeto.
 * Assim, temos uma biblioteca de componentes e ferramentas, que são acessadas pelo diretor quando provocado a construir algum modelo pré-estabelecido por meio de uma interface.
-* Sempre chamaremos os builder para resolver objeto complexos com muitos parâmetro.s
+* Sempre chamaremos os builder para resolver objeto complexos com muitos parâmetros.
 
 
 
