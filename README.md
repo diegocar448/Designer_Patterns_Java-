@@ -54,6 +54,8 @@ SOLID, Criacional, Estrutural, Comportamental.
 * Assim, temos uma biblioteca de componentes e ferramentas, que são acessadas pelo diretor quando provocado a construir algum modelo pré-estabelecido por meio de uma interface.
 * Sempre chamaremos os builder para resolver objeto complexos com muitos parâmetros.
 
+## Design Patterns Estrutural
+
 ### Adapter
 
 * Podemos utilizar o padrão ADAPTER para **converter a interface de um objeto** de maneira que **outro objeto possa compreender as informações**.
@@ -68,6 +70,18 @@ SOLID, Criacional, Estrutural, Comportamental.
 * O Bridge é um padrão de projeto estrutural que permite que você dividir uma classe grande ou um conjunto de classes intimamente ligadas em duas hierarquias separadas.
 * Abstração neste caso não é diretamente ligada com interface ou classe abstrata. **Abstração** é uma camada de controller de alto nível para alguma entidade. Neste caso será nossa Live. Essa camada não deve fazer nenhum tipo de trabalho por conta própria .Ela deve delegar o trabalho para a camada de implementação ( também chamada de plataforma ) - será Youtube, TwitchTV e Facebook.
 
+
+
+## Design Patterns Comportamental
+
+
+### Chain of Responsibility
+
+* Se baseia na idéia de transformar comportamentos em objetos independentes denominados handlers.
+* Assim as verificações são extraídas para sua própria classe com um único método que faz a checagem. O pedido, junto com seus dados, é passado para esse método como um argumento.
+* O padrão sugere que os handlers sejam ligados como em um corrente.
+* Cada Hadler ligado tem um campo para armazenar uma referência ao proximo handler da corrente. Além de processar o pedido , os handlers também o passam adiante na corrente.
+* O pedido viaja através da corrente até que todos os handlers tiverram uma chance de processá-lo. E Aqui está a melhor parte: um handler pode decidir não passar o pedido adiante na corrente efetivamente interromper um proximo processamento.
 
 
 
