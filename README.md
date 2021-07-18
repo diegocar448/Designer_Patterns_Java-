@@ -61,6 +61,13 @@ SOLID, Criacional, Estrutural, Comportamental.
 * Adapter Convert a interface de uma classe para outro interface que o código cliente espera retornar. A entidade adaptadora permite que classes com interfaces incompativeis trabalhem juntas.
 * Vamos pensar nesse padrão de projeto como um Benjamin onde ele permite adaptador e fazer a comunicação, por exemplo um API pegar um padrão de comunicação pegando um XML e retornando um JSON.
 
+### Bridge
+
+* É a parte que vai ligar a ponte abstração da Implementação. Imagine que precisamos quebrar essa classe em várias classes, mas pense bem, Youtube Live, Facebook Live e Twitch TV, ou seja todas as plataformas utilizam o mesmo conceito.
+* Então como podemos quebrar uma classe grande em varias? E ainda assim compartilhar os recursos da transmissão como configuração RMTP, autenticação e outros métodos necessários para fazer a Live?
+* O Bridge é um padrão de projeto estrutural que permite que você dividir uma classe grande ou um conjunto de classes intimamente ligadas em duas hierarquias separadas.
+* Abstração neste caso não é diretamente ligada com interface ou classe abstrata. **Abstração** é uma camada de controller de alto nível para alguma entidade. Neste caso será nossa Live. Essa camada não deve fazer nenhum tipo de trabalho por conta própria .Ela deve delegar o trabalho para a camada de implementação ( também chamada de plataforma ) - será Youtube, TwitchTV e Facebook.
+
 
 
 
